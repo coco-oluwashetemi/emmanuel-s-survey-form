@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+ <main>
+    <head>
+      <meta charset="utf-8" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" href="styles.css"/>
+      <title>Emmanuel's survey project</title>
+      </head>
+      <body>
+        <div class="top-space"></div>
+         <h1 id="title">Emmanuel's survey form</h1>
+         <p id="description">This is a survey i'm building using html to earn my first certification</p>
+        <form id="survey-form">
+   <fieldset>
+     <label id="name-label">Full-Name<input placeholder="Input Your Full name" id="name" type="text" required /></label>
+   <select name="title" class="title">
+     <option value="">title</option>
+  <option value="mr">Mr</option>
+  <option value="miss">Miss</option>
+  <option value="mrs">Mrs</option>
+  <option value="dr">Dr</option>
+  <option value="sir">Sir</option>
+</select>
+    
+      <label id="email-label">Email<input placeholder="Input Your Email" id="email" type="email" required /></label>
+      <label id="number-label">Age<input placeholder="Input Your Age" id="number" type="number" min="13" max="110" required /></label>
+      <label>occupation (optional)<input placeholder="what do you do" id="occupation" type="text"/></label></fieldset>
+  <fieldset>
+    <legend>Gender</legend>
+      <label for="male"><input value="male" type="radio" id="male" required name="gender"/>  Male</label>
+    <label for="female"><input value="male" type="radio" id="female" required name="gender"/>  Female</label>
+  </fieldset>
+  <fieldset>
+ <legend>Do you see a future for me in web dev ?</legend>
+  <label><input id"yes" value="yes" type="radio" name="future" required name="PFC"/>  Yes</label>
+  <label for="no"><input id"no" value="no" type="radio" name="future" required name="PFC"/>  No</label>
+ </fieldset>
+ <fieldset class="checkbox">
+   <legend>what about this survey form's design has caught your eye?</legend>
+   <label><input id="" type="checkbox" value="Font"/>  Font</label>
+   <label><input  id="" type="checkbox" value="Color"/>  Color</label>
+   <label><input id="" type="checkbox" value="Design"/>  Design</label>
+   <label><input id="" type="checkbox" value="Features"/>  Features</label>
+   <label><input id="" type="checkbox" value="Everything"/>  Everything</label>
+   <label><input id="" type="checkbox" value="Nothing"/>  Nothing</label>
+   <label><input id="" type="checkbox" value="others"/>  others</label>
+   
+ </fieldset>
+
+<label for="dropdown" class="dropdown">rate my code (1-10)<select id="dropdown" name="code_rating">
+  <option value="">(select one)</option>
+   <option value="one">1</option>
+  <option value="two">2</option>
+  <option value="three">3</option>
+  <option value="four">4</option>
+  <option value="five">5</option>
+  <option value="six">6</option>
+  <option value="seven">7</option>
+  <option value="eight">8</option>
+  <option value="nine">9</option>
+  <option value="ten">10</option>
+</select></label>
+ <label class="choose">How have you come across my code ?<select name="how_d_you_see_this_survey" id="choose">
+   <option>choose one</option>
+   <option value="camp official">i'm a freecode camp official</option>
+  <option value="friend">i'm your friend</option>
+   <option value="other">other</option></select></label>
+<label class="textarea"> please give your feedback<textarea placeholder=" In what ways do you think i can improve my code?" rows="5" cols="50" id"textarea" value="viewers feedback" ></textarea></label> 
+<input id="submit" type="submit"/>
+
+  </form>
+   </main>
+   </body>
+   <footer>
+     <p>copyright 2024, Collins Ayomidipupo Emmanuel</p>
+     
+   </footer>
+</html>
